@@ -1,6 +1,11 @@
 <template>
-  <Whereby :room="content.room" :displayName="content.displayName" :avatarUrl="content.avatarUrl" :chat="content.chat"
-    :people="content.people" :minimal="content.minimal" :key="updateComponent" />
+  <Whereby :key="updateComponent" :room="content.room" :audio="content.audio" :avatarUrl="content.avatarUrl"
+    :autoSpotlight="content.autoSpotlight" :background="content.background" :bottomToolbar="content.bottomToolbar"
+    :breakout="content.breakout" :chat="content.chat" :displayName="content.displayName"
+    :externalId="content.externalId" :groups="content.groups" :logo="content.logo" :metadata="content.metadata"
+    :precallCeremony="content.precallCeremony" :precallCeremonyCanSkip="content.precallCeremonyCanSkip"
+    :roomIntegrations="content.roomIntegrations" :screenshare="content.screenshare" :timer="content.timer"
+    :topToolbar="content.topToolbar" :video="content.video" />
 </template>
 
 <script setup>
